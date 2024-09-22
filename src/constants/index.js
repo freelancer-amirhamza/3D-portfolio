@@ -15,13 +15,9 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    farmart,
+    matthew,
     carrent,
-    jobit,
-    tripguide,
     threejs,
     ecommerce,
     portfolio1,
@@ -44,21 +40,57 @@ import {
   ];
   
   const services = [
+    // {
+    //   title: "Digital Marketer",
+    //   icon: web,
+    // },
+    // {
+    //   title: "React.JS Developer",
+    //   icon: mobile,
+    // },
+    // {
+    //   title: "Web Developer",
+    //   icon: backend,
+    // },
     {
-      title: "Web Developer",
-      icon: web,
+      title: "HTML5",
+      icon: html,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "CSS3",
+      icon: css,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Tailwind CSS",
+      icon: tailwind,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "JavaScript",
+      icon: javascript,
+    },
+    {
+      title: "React JS",
+      icon: reactjs,
+    },
+    {
+      title: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      title: "Node JS",
+      icon: nodejs,
+    },
+    {
+      title: "Mongo DB",
+      icon: mongodb,
+    },
+    {
+      title: "Figma",
+      icon: figma,
+    },
+    {
+      title: "Git",
+      icon: git,
     },
   ];
   
@@ -119,11 +151,11 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Digital Marketer",
+      company_name: "TachBond IT",
+      icon: mobile,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "2021 - April 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -132,11 +164,11 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Front-End Developer",
+      company_name: "KS Devware",
+      icon: creator,
+      iconBg: "#383E56",
+      date: "2022 - 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -145,11 +177,11 @@ import {
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Back-End Developer",
+      company_name: "",
+      icon: backend,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "2023 - 2024",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -159,10 +191,10 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      company_name: "",
+      icon: web,
+      iconBg: "#383E56",
+      date: "2024 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -222,7 +254,7 @@ import {
       source_code_link: "https://github.com/freelancer-amirhamza",
     },
     {
-      name: "Job IT",
+      name: "Next.js Portfolio Website",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -231,19 +263,19 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "next.js",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwindCss",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/freelancer-amirhamza",
+      image: matthew,
+      source_code_link: "https://matthew-amir.netlify.app",
     },
     {
-      name: "Trip Guide",
+      name: "Full Stack Ecommerce Site",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -252,7 +284,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -260,8 +292,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/freelancer-amirhamza",
+      image: farmart,
+      source_code_link: "https://farmart-amir.netlify.app/",
     },
     {
       name: "FullStack E-Commerce Website",

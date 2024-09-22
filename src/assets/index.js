@@ -29,7 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import ecommerce from "./ecommerce.png";
+import farmart from "./farmart.png";
+import ecommerce from "./Ecommerce.png";
+import matthew from "./matthew.png";
 import portfolio1 from './portfolio1.png';
 import portfolio3 from './portfolio3.png'
 
@@ -63,6 +65,8 @@ export {
   jobit,
   tripguide,
   ecommerce,
+  farmart,
+  matthew,
   portfolio1,
   portfolio3,
 };
