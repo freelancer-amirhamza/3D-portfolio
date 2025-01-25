@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {styles} from '../styles';
 import {navLinks} from '../constants';
-import {logo, menu , close } from '../assets';
+import { menu , close } from '../assets';
 
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav 
     className={ ` ${styles.paddingX} w-full flex items-center 
-    py-5 fixed top-0 z-20 bg-primary  `}
+    py-5 fixed top-0 z-20 bg-primary bg-opacity-10 backdrop-blur-lg shadow-lg  `}
     >
         <div className='w-full flex justify-between 
           items-center max-w-7xl mx-auto  ' >
@@ -24,13 +24,10 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
             > 
-            <img src={logo} alt="Amir Hamza"
-            className='w-9 h-9 mr-5 object-contain'
-            />
-            <p className="text-white text-[18px] font-bold
-            cursor-pointer ">
-              Amir Hamza <span className='sm:block hidden' ></span>
-            </p>
+            <h1 className=" text-gradient lg:text-6xl text-5xl  gap-x-3 flex flex-row leading-none uppercase">
+              <span className='max-sm:text-2xl font-primary ' >Amir</span>
+              <span className='max-sm:text-2xl font-primary' >Hamza</span>
+            </h1>
             </Link>
             <ul className='list-none hidden sm:flex flex-row gap-10' >
               {navLinks.map((link) => (

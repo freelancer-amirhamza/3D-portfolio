@@ -1,9 +1,11 @@
 import logo from "./logo.svg";
+import avatar from "./avatar.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import link from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -25,23 +27,35 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import farmart from "./farmart.png";
+import furniture from "./furniture.png";
 import ecommerce from "./Ecommerce.png";
+import firebaseEcommerce from "./firebase-ecommerce.png";
+import foodDelivery from "./fooddelivery.png";
+import mernStackCurd from "./mern-stack-curd.png";
 import matthew from "./matthew.png";
+import mernEcommerce from "./mern-ecommerce.png";
 import portfolio1 from './portfolio1.png';
+import portfolio2 from './portfolio-2.png'
 import portfolio3 from './portfolio3.png'
-
+import portfolio4 from './portfolio-4.png'
+import portfolio5 from './portfolio-5.png'
+import portfolio6 from './portfolio-6.png'
+import portfolio7 from './portfolio-7.png'
+import portfolio8 from './portfolio-8.png'
+import portfolio9 from './portfolio-9.png'
 export {
+  firebaseEcommerce,
+  foodDelivery,
+  mernStackCurd,
   logo,
+  avatar,
   backend,
   creator,
   mobile,
   web,
   github,
+  link,
   menu,
   close,
   css,
@@ -61,12 +75,18 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   ecommerce,
   farmart,
   matthew,
   portfolio1,
+  portfolio2,
   portfolio3,
+  portfolio4,
+  portfolio5,
+  portfolio6,
+  portfolio7,
+  portfolio8,
+  portfolio9,
+  furniture,
+  mernEcommerce
 };

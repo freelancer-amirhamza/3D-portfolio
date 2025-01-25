@@ -17,11 +17,22 @@ import {
     docker,
     farmart,
     matthew,
-    carrent,
     threejs,
     ecommerce,
+    mernStackCurd,
+    foodDelivery,
+    firebaseEcommerce,
     portfolio1,
+    portfolio2,
     portfolio3,
+    portfolio4,
+    portfolio5,
+    portfolio6,
+    portfolio7,
+    portfolio8,
+    portfolio9,
+    furniture,
+    mernEcommerce
   } from "../assets";
   
   export const navLinks = [
@@ -55,14 +66,17 @@ import {
     {
       title: "HTML5",
       icon: html,
+      // desc: "HTML stands for Hyper Text Markup Language. HTML is the standard markup language for Web pages. HTML elements are the building blocks of HTML pages."
     },
     {
       title: "CSS3",
       icon: css,
+      // desc: "CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes"
     },
     {
       title: "Tailwind CSS",
       icon: tailwind,
+      desc: ""
     },
     {
       title: "JavaScript",
@@ -71,26 +85,32 @@ import {
     {
       title: "React JS",
       icon: reactjs,
+      desc: ""
     },
     {
       title: "Redux Toolkit",
       icon: redux,
+      desc: ""
     },
     {
       title: "Node JS",
       icon: nodejs,
+      desc: ""
     },
     {
       title: "Mongo DB",
       icon: mongodb,
+      desc: ""
     },
     {
       title: "Figma",
       icon: figma,
+      desc: ""
     },
     {
       title: "Git",
       icon: git,
+      desc: ""
     },
   ];
   
@@ -233,30 +253,61 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Kazi Bazaar MERN Full Stack E-Commerce",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS, Shadcn UI,  React.js, Redux, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer for practice purpose ",
       tags: [
         {
-          name: "react",
+          name: "React.JS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Shadcn.UI",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Node.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MongoDB",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: mernEcommerce,
+      source_code_link: "https://github.com/freelancer-amirhamza/mern-ecommerce.git",
+      live_link: "www.kazibazaar.com",
+    },
+    {
+      name: "My Portfolio",
+      description:
+        "This is my first and primary personal portfolio website, I have built this website using HTML, CSS, JavaScript, ",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio8,
       source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://amirhamzadev.com",
     },
     {
       name: "Next.js Portfolio Website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is a NextJS portfolio website, I have built this website as practicing next.js project using react next.js tailwind CSS, typing and motion animation and extra advanced features.",
       tags: [
         {
           name: "react",
@@ -273,11 +324,12 @@ import {
       ],
       image: matthew,
       source_code_link: "https://matthew-amir.netlify.app",
+      live_link: "https://matthew-amir.netlify.app",
     },
     {
       name: "Full Stack Ecommerce Site",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS,  React.js, Redux, Next.js, firebase, mongoose, paypal payment gateway, cloudinary, multer for practice purpose",
       tags: [
         {
           name: "nextjs",
@@ -293,28 +345,122 @@ import {
         },
       ],
       image: farmart,
-      source_code_link: "https://farmart-amir.netlify.app/",
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://farmart-amir.netlify.app/",
     },
     {
-      name: "FullStack E-Commerce Website",
+      name: "Full Stack Ecommerce Site",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS, React.js, Redux,JWT authentication, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer for practice purpose",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind.css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: foodDelivery,
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://farmart-amir.netlify.app/",
+    },
+    {
+      name: "Full Stack Ecommerce Site",
+      description:
+        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS, Shadcn UI,  React.js, Redux, node.js, express.js, mongoDB, mongoose, paypal payment gateway, cloudinary, multer for practice purpose",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "react",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: firebaseEcommerce,
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://myshop-amir.netlify.app",
+    },
+    {
+      name: "Full Stack Ecommerce Site",
+      description:
+        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS, React.js,  node.js, express.js, JWT authentication, mongoDB, mongoose, cloudinary, multer for practice purpose",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mernStackCurd,
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://farmart-amir.netlify.app/",
+    },
+    {
+      name: "Front-End React  E-commerce Site",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind.css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: furniture,
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://furniture-psi-vert.vercel.app/",
+    },
+    {
+      name: "Front-End Static E-Commerce Website",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
       image: ecommerce,
-      source_code_link: "https://farmart-amir.netlify.app/",
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://amir-ecommerce.netlify.app/",
     },
     {
       name: "React personal portfolio",
@@ -335,10 +481,33 @@ import {
         },
       ],
       image: portfolio1,
-      source_code_link: "https://github.com/freelancer-amirhamza",
+      source_code_link: "https://github.com/freelancer-amirhamza?tab=repositories",
+      live_link: "https://pink-portfolio-amir.netlify.app/",
     },
     {
       name: "LEGAL SOLUTIONS",
+      description:
+        "We are committed to excellence and have a deep understanding of the law. Our aim is to provide you with practical solutions.",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind.css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio3,
+      source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://legal-amir.netlify.app/",
+    },
+    {
+      name: "Restaurant Website",
       description:
         "We are committed to excellence and have a deep understanding of the law. Our aim is to provide you with practical solutions.",
       tags: [
@@ -355,8 +524,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio3,
+      image: portfolio2,
       source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://amirhamza-rest.netlify.app/",
+    },
+    {
+      name: "Business Website",
+      description:
+        "We are committed to excellence and have a deep understanding of the law. Our aim is to provide you with practical solutions.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio4,
+      source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://amirhamza-business.netlify.app/",
+    },
+    {
+      name: "Zeppto Website",
+      description:
+        "We are committed to excellence and have a deep understanding of the law. Our aim is to provide you with practical solutions.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio7,
+      source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://amirhamza-zeppto.netlify.app/",
     },
 
   ];

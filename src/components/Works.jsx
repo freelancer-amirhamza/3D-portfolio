@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 
-import {Tilt} from "react-tilt";
+// import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-
+import { FaStaylinked } from "react-icons/fa";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -16,6 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
   
@@ -28,19 +30,11 @@ const ProjectCard = ({
 
     return () => window.removeEventListener("resize", handleResize)
   },[])
-
   return (
    <>
-   {isMobile ? (<Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        
-      >
+   {isMobile ? (
     <div
-    className='bg-tertiary p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
+    className='bg-tertiary  hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
     >
       
         
@@ -51,7 +45,18 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-start m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(live_link)}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <FaStaylinked 
+              className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+
+          <div className='absolute right-0 top-0  flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -81,19 +86,22 @@ const ProjectCard = ({
           ))}
         </div>
     </div>
-      </Tilt>
+      
       ) : (
-        <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-      >
+      //   <Tilt
+      //   options={{
+      //     max: 45,
+      //     scale: 1,
+      //     speed: 450,
+      //   }}
+      // >
     <motion.div
-    className='bg-tertiary p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
-    variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      
+    // className='bg-tertiary  hover:scale-105 duration-300 hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
+    // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
+      <div 
+    className='bg-tertiary  hover:scale-105 duration-300 hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
+    >
         
         <div className='relative w-full h-[230px]'>
           <img
@@ -101,8 +109,18 @@ const ProjectCard = ({
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
+          <div className='absolute inset-0 flex justify-start m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(live_link)}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <FaStaylinked 
+              className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute right-0 top-0  flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -117,75 +135,25 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white truncate font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary line-clamp-2 text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-4 flex flex-wrap gap-1'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className={`text-[14px] ${tag.color} line-clamp-1`}
             >
               #{tag.name}
             </p>
           ))}
         </div>
+        </div>
     </motion.div>
-      </Tilt>
-       )
+      // </Tilt>
+      )
    } 
-   
-   {/* <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-      >
-    <motion.div
-    className='bg-tertiary p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
-    variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      
-        
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-    </motion.div>
-      </Tilt> */}
     
    </>
   );
@@ -232,13 +200,15 @@ const Works = () => {
       </>
     ) : (
       <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+      // variants={textVariant()}
+      >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          // variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Following projects showcases my skills and experience through
