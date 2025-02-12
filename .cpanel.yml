@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/nqqwzomy/public_html/amirhamzadev
-    - /bin/cp * $DEPLOYPATH
+    - npm install --prefix $DEPLOYPATH
+    - npm run build --prefix $DEPLOYPATH
+    - rsync -a $DEPLOYPATH/build/ $DEPLOYPATH
