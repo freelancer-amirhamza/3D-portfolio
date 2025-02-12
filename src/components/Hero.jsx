@@ -4,6 +4,7 @@ import {styles } from '../styles';
 // import {ComputersCanvas} from './canvas';
 import { TypeAnimation } from 'react-type-animation';
 import { fadeIn, slideIn } from '../utils/motion';
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const Hero = () => {
 
@@ -48,6 +49,11 @@ const Hero = () => {
             className='text-[#915eff] '
             />
             </h1>
+            <a href="/AmirHamza.pdf" download
+           className="bg-tertiary flex gap-3 cursor-pointer items-center px-4 p-2 text-xl  mt-16 btn btn-sm rounded-3xl outline-none w-fit text-white font-bold shadow-md shadow-primary ">
+              <button type='submit' >My Resume</button>
+              <FaCloudDownloadAlt size={26} />
+            </a>
           </motion.div>
         </div>
       </motion.div>

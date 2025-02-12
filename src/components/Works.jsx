@@ -34,7 +34,7 @@ const ProjectCard = ({
    <>
    {isMobile ? (
     <div
-    className='bg-tertiary  hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
+    className='bg-tertiary  hover:shadow-card p-2 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
     >
       
         
@@ -88,26 +88,19 @@ const ProjectCard = ({
     </div>
       
       ) : (
-      //   <Tilt
-      //   options={{
-      //     max: 45,
-      //     scale: 1,
-      //     speed: 450,
-      //   }}
-      // >
     <motion.div
     // className='bg-tertiary  hover:scale-105 duration-300 hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
     // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <div 
-    className='bg-tertiary  hover:scale-105 duration-300 hover:shadow-card p-5 rounded-2xl xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
+    className='bg-tertiary  hover:scale-105 duration-300 hover:shadow-card p-2 rounded-md xs:w-[340px] sm:w-[390px] md:w-[350px] w-full '
     >
         
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-cover rounded-t-md'
           />
           <div className='absolute inset-0 flex justify-start m-3 card-img_hover'>
             <div

@@ -22,17 +22,15 @@ import {
     mernStackCurd,
     foodDelivery,
     firebaseEcommerce,
+    kazibazaar,
+    postgreSql1,
     portfolio1,
     portfolio2,
     portfolio3,
     portfolio4,
-    portfolio5,
-    portfolio6,
     portfolio7,
     portfolio8,
-    portfolio9,
     furniture,
-    mernEcommerce
   } from "../assets";
   
   export const navLinks = [
@@ -83,6 +81,10 @@ import {
       icon: javascript,
     },
     {
+      title: "TypeScript",
+      icon: typescript,
+    },
+    {
       title: "React JS",
       icon: reactjs,
       desc: ""
@@ -103,12 +105,17 @@ import {
       desc: ""
     },
     {
+      title: "PostgreSQL",
+      icon: postgreSql1,
+      desc: ""
+    },
+    {
       title: "Figma",
       icon: figma,
       desc: ""
     },
     {
-      title: "Git",
+      title: "GitHub",
       icon: git,
       desc: ""
     },
@@ -253,9 +260,9 @@ import {
   
   const projects = [
     {
-      name: "Kazi Bazaar MERN Full Stack E-Commerce",
+      name: "Kazi Bazaar E-Commerce",
       description:
-        "This is a MERN Full Stack E-Commerce website, I have built this website using Tailwind.CSS, Shadcn UI,  React.js, Redux, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer for practice purpose ",
+        "This is a Full Stack Real E-Commerce website, I have built this website using Tailwind.CSS, Shadcn UI,  React.js, Redux, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer.",
       tags: [
         {
           name: "React.JS",
@@ -278,9 +285,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: mernEcommerce,
+      image: kazibazaar,
       source_code_link: "https://github.com/freelancer-amirhamza/mern-ecommerce.git",
-      live_link: "www.kazibazaar.com",
+      live_link: "https://kazibazaar.com",
     },
     {
       name: "My Portfolio",

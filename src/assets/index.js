@@ -35,6 +35,10 @@ import foodDelivery from "./fooddelivery.png";
 import mernStackCurd from "./mern-stack-curd.png";
 import matthew from "./matthew.png";
 import mernEcommerce from "./mern-ecommerce.png";
+import kazibazaar from "./kazibazaar.png";
+import resume from "./AmirHamza.pdf";
+import postgreSql from "./postgreSql.png";
+import postgreSql1 from "./postgreSql1.png";
 import portfolio1 from './portfolio1.png';
 import portfolio2 from './portfolio-2.png'
 import portfolio3 from './portfolio3.png'
@@ -77,6 +81,7 @@ export {
   tesla,
   ecommerce,
   farmart,
+  resume,
   matthew,
   portfolio1,
   portfolio2,
@@ -88,5 +93,8 @@ export {
   portfolio8,
   portfolio9,
   furniture,
-  mernEcommerce
+  mernEcommerce,
+  kazibazaar,
+  postgreSql,
+  postgreSql1,
 };
