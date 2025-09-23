@@ -31,8 +31,11 @@ import {
     portfolio7,
     portfolio8,
     furniture,
+    deshimotors,
+    mysql,
+    mysoft
   } from "../assets";
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -47,7 +50,7 @@ import {
       title: "Contact",
     },
   ];
-  
+
   const services = [
     // {
     //   title: "Digital Marketer",
@@ -70,8 +73,7 @@ import {
       title: "CSS3",
       icon: css,
       // desc: "CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes"
-    },
-    {
+    },{
       title: "Tailwind CSS",
       icon: tailwind,
       desc: ""
@@ -105,6 +107,11 @@ import {
       desc: ""
     },
     {
+      title: "MySQL",
+      icon: mysql,
+      desc: ""
+    },
+    {
       title: "PostgreSQL",
       icon: postgreSql1,
       desc: ""
@@ -120,7 +127,7 @@ import {
       desc: ""
     },
   ];
-  
+
   const technologies = [
     {
       name: "HTML 5",
@@ -175,62 +182,50 @@ import {
       icon: docker,
     },
   ];
-  
-  const experiences = [
-    {
-      title: "Digital Marketer",
-      company_name: "TachBond IT",
-      icon: mobile,
-      iconBg: "#383E56",
-      date: "2021 - April 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Front-End Developer",
-      company_name: "KS Devware",
-      icon: creator,
-      iconBg: "#383E56",
-      date: "2022 - 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Back-End Developer",
-      company_name: "",
-      icon: backend,
-      iconBg: "#383E56",
-      date: "2023 - 2024",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "",
-      icon: web,
-      iconBg: "#383E56",
-      date: "2024 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
+
+ const experiences = [
+  {
+    title: "Digital Marketer",
+    company_name: "TachBond IT",
+    icon: mobile,
+    iconBg: "#383E56",
+    date: "2021 – April 2022",
+    points: [
+      "Designed and executed digital marketing campaigns across social media and search platforms to increase brand visibility.",
+      "Conducted market research and competitor analysis to identify growth opportunities and optimize strategy.",
+      "Created content (blogs, posts, graphics) tailored to audience segments to boost engagement and conversion rates.",
+      "Monitored analytics and KPIs, making data-driven adjustments to campaigns to maximize ROI.",
+    ],
+  },
+  {
+    title: "Digital Marketer (Part-time)",
+    company_name: "Labbaik Motors & Car Decoration",
+    icon: creator,
+    iconBg: "#383E56",
+    date: "2025 – Present",
+    points: [
+      "Manage social media content calendar, creating posts and visuals aligned with brand identity.",
+      "Run paid advertising campaigns (Facebook, Instagram, Google Ads), track performance and optimize spend.",
+      "Coordinate with designers and content creators to develop promotional assets and marketing collateral.",
+      "Analyze campaign metrics such as CTR, engagement, and lead generation to inform future strategy.",
+    ],
+  },
+  {
+    title: "Junior Web Developer (Internship)",
+    company_name: "My Soft IT Solution",
+    icon: web,
+    iconBg: "#383E56",
+    date: "2025 – Present",
+    points: [
+      "Assist in developing web interfaces using React.js, HTML, CSS and ensure responsive design across devices.",
+      "Debug and test features under supervision, fix bugs, and suggest improvements to enhance code quality.",
+      "Collaborate with senior developers and UX/UI designers to translate design mockups into functional components.",
+      "Participate in code reviews, follow best practices and learn version control workflows (e.g. Git).",
+    ],
+  },
+];
+
+
   const testimonials = [
     {
       testimonial:
@@ -257,8 +252,68 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+
   const projects = [
+    {
+      name: "Deshi Motors E-Commerce",
+      description:
+        "This is a Full Stack Real E-Commerce website, I have built this website using Tailwind.CSS, React.js, Redux, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer.",
+      tags: [
+        {
+          name: "React.JS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mysoft,
+      source_code_link: "https://github.com/freelancer-amirhamza",
+      live_link: "https://mysoftitsolution.com",
+    },
+    {
+      name: "Deshi Motors E-Commerce",
+      description:
+        "This is a Full Stack Real E-Commerce website, I have built this website using Tailwind.CSS, React.js, Redux, node.js, express.js,JWT authentication, mongoDB, mongoose, paypal payment gateway, cloudinary, multer.",
+      tags: [
+        {
+          name: "React.JS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: deshimotors,
+      source_code_link: "https://github.com/freelancer-amirhamza/deshimotors.git",
+      live_link: "https://deshimotors.com",
+    },
     {
       name: "Kazi Bazaar E-Commerce",
       description:
@@ -581,5 +636,5 @@ import {
     },
 
   ];
-  
+
   export { services, technologies, experiences, testimonials, projects };

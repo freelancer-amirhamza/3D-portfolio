@@ -22,18 +22,20 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import mysql from "./mySQL-logo.png"
+import mysoft from "./mysoft.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import farmart from "./farmart.png";
-import furniture from "./furniture.png";
-import ecommerce from "./Ecommerce.png";
+import deshimotors from "./dishimotors.png";
+import ecommerce from "./ecommerce.png";
 import firebaseEcommerce from "./firebase-ecommerce.png";
 import foodDelivery from "./fooddelivery.png";
 import mernStackCurd from "./mern-stack-curd.png";
 import matthew from "./matthew.png";
+import furniture from "./furniture.png";
 import mernEcommerce from "./mern-ecommerce.png";
 import kazibazaar from "./kazibazaar.png";
 import resume from "./AmirHamza.pdf";
@@ -86,15 +88,7 @@ export {
   portfolio1,
   portfolio2,
   portfolio3,
-  portfolio4,
-  portfolio5,
-  portfolio6,
-  portfolio7,
-  portfolio8,
-  portfolio9,
-  furniture,
-  mernEcommerce,
-  kazibazaar,
-  postgreSql,
-  postgreSql1,
+  portfolio4,mysoft,
+  portfolio5, portfolio6,  portfolio7,portfolio8,portfolio9,
+  mernEcommerce,kazibazaar,postgreSql,postgreSql1,furniture,deshimotors,mysql,
 };
