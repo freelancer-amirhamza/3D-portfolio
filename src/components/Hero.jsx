@@ -8,11 +8,11 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const Hero = () => {
 
-  
+
   return (
     <section className="relative w-full h-screen max-sm:h-[123vh]  mx-auto justify-center flex " >
       <div className={`${styles.paddingX} absolute w-full mt-20 -px-0 md:flex-row flex flex-col-reverse items-center h-full mx-auto justify-center`}>
-      <motion.div variants={slideIn("left", "tween", 0.1, 1)} className={` flex-1 w-full inset-0 max-w-7xl 
+      <motion.div variants={slideIn("left", "tween", 0.1, 1)} className={` flex-1 w-full inset-0 max-w-7xl
        flex flex-row items-center gap-5  `}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="h-5 w-5 bg-[#915eff] rounded-full"/>
@@ -22,8 +22,8 @@ const Hero = () => {
         <h1 className={` ${styles.heroHeadText}  text-white font-primary mx-0  `}>
           Hi, I&apos;m <span className='text-[#915eff] font-secondary uppercase'> Amir Hamza</span>
         </h1>
-      
-        <motion.div 
+
+        <motion.div
           variants={fadeIn('up', 0.3)}
           initial='hidden'
           whileInView={'show'}
@@ -41,7 +41,7 @@ const Hero = () => {
               2000,
               "MERN Stack Developer",
               2000,
-              
+
             ]}
             speed={50}
             repeat={Infinity}
@@ -49,7 +49,7 @@ const Hero = () => {
             className='text-[#915eff] '
             />
             </h1>
-            <a href="/AmirHamza.pdf" download
+            <a href="/AmirhamzaCV.pdf" download
            className="bg-tertiary flex gap-3 cursor-pointer items-center px-4 p-2 text-xl  mt-16 btn btn-sm rounded-3xl outline-none w-fit text-white font-bold shadow-md shadow-primary ">
               <button type='submit' >My Resume</button>
               <FaCloudDownloadAlt size={26} />
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
       </motion.div>
       {/* <ComputersCanvas /> */}
-      <div className="flex h-full flex-0.9 animate-upDown duration-300 hover:shadow-box   max-sm:max-w-[20rem] 
+      <div className="flex h-full flex-0.9 animate-upDown duration-300 hover:shadow-box   max-sm:max-w-[20rem]
       max-sm:max-h-[20rem] max-w-[24rem] max-h-[24rem] rounded-full green-pink-gradient p-[4px] items-center justify-center ">
         <div className=" max-w-[24rem]  rounded-full  bg-tertiary  ">
           <img className='w-full h-full object-cover' src={avatar} alt="" />

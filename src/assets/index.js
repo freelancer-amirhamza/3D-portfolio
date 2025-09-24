@@ -38,7 +38,7 @@ import matthew from "./matthew.png";
 import furniture from "./furniture.png";
 import mernEcommerce from "./mern-ecommerce.png";
 import kazibazaar from "./kazibazaar.png";
-import resume from "./AmirHamza.pdf";
+import resume from "./AmirhamzaCV.pdf";
 import postgreSql from "./postgreSql.png";
 import postgreSql1 from "./postgreSql1.png";
 import portfolio1 from './portfolio1.png';
